@@ -12,7 +12,7 @@ defmodule Secrets do
   end
 
   def secret_divide(secret) do
-    fn divide -> divide / secret end
+    fn divisor -> Kernel.div(divisor, secret) end
   end
 
   def secret_and(secret) do
